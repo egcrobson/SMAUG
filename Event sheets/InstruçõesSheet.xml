@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>InstruçõesSheet</name>
+    <events>
+        <event-block sid="866560291988167">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="301198812519067" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="726795048319689" type="Sprite4">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="471659630691061">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="534972317931116" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="472077363866236" type="System">
+                    <param id="0" name="Width">320</param>
+                    <param id="1" name="Height">386</param>
+                </action>
+                <action id="0" name="Play" sid="245368555777380" type="Audio">
+                    <param id="0" name="Audio file">Flags</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;tutorial&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="220945894633002">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="418112402013924" type="Mouse">
+                    <param id="0" name="Object">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="913591959285312" type="Back">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="646538287717237">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="215099094402319" type="Mouse">
+                    <param id="0" name="Object">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="772885124032145" type="Back">
+                    <param id="0" name="Animation">&quot;Off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="963789314830147">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="122654123978455" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="446951098372438" type="Audio">
+                    <param id="0" name="Audio file">vgmenuhighlight</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="841855033988982" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+                <action id="6" name="Stop" sid="825273096676181" type="Audio">
+                    <param id="0" name="Tag">&quot;tutorial&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="664608355366590">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="503824845863812" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="528500973241845" type="System">
+                    <param id="0" name="Width">150</param>
+                    <param id="1" name="Height">130</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,1228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FirstChallengeSheet </name>
+    <events>
+        <variable constant="0" name="posicao2" sid="199557951172152" static="0" type="number">0</variable>
+        <variable constant="0" name="angSilverStar" sid="363999912449062" static="0" type="number">270</variable>
+        <variable constant="0" name="angRedDragon" sid="413927726783740" static="0" type="number">90</variable>
+        <variable constant="0" name="angGreenDragon" sid="440764822567988" static="0" type="number">180</variable>
+        <variable constant="0" name="angGoldStar" sid="513026074107030" static="0" type="number">270</variable>
+        <variable constant="0" name="angDown" sid="352428588793826" static="0" type="number">0</variable>
+        <variable constant="0" name="angLeft" sid="442814028006983" static="0" type="number">0</variable>
+        <variable constant="0" name="angUp" sid="182167098847878" static="0" type="number">0</variable>
+        <variable constant="0" name="angRight" sid="455862274072095" static="0" type="number">0</variable>
+        <event-block sid="315382629842252">
+            <conditions>
+                <condition id="3" name="On key released" sid="542756598449749" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="447818510379803" type="Fred">
+                    <param id="0" name="Object">GoldStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="202743386612767" type="Audio">
+                    <param id="0" name="Audio file">Escudos</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="705494680057300" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">angDown &lt;= 360 ? 90 : 0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="564695138425646" type="GoldStar">
+                    <param id="0" name="Angle">angDown</param>
+                </action>
+                <action id="-9" name="Set value" sid="546985066143309" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">angDown = 360 ? 0 : angDown</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914733514807241">
+            <conditions>
+                <condition id="3" name="On key released" sid="531199237947319" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="237580151979908" type="Fred">
+                    <param id="0" name="Object">GreenDragon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="793079688691857" type="Audio">
+                    <param id="0" name="Audio file">Escudos</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="436169776056293" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">angUp &lt;= 360 ? 90 : 0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="235414775433831" type="GreenDragon">
+                    <param id="0" name="Angle">angUp</param>
+                </action>
+                <action id="-9" name="Set value" sid="329142942641369" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">angUp= 360 ? 0 : angUp</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="964073319850437">
+            <conditions>
+                <condition id="3" name="On key released" sid="653933160927025" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="444802016370760" type="Fred">
+                    <param id="0" name="Object">RedDragon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="483184933532296" type="Audio">
+                    <param id="0" name="Audio file">Escudos</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="808145289402755" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">angRight &lt;= 360 ? 90 : 0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="822508646016337" type="RedDragon">
+                    <param id="0" name="Angle">angRight</param>
+                </action>
+                <action id="-9" name="Set value" sid="568746478503240" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">angRight = 360 ? 0 : angRight</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="516341119399709">
+            <conditions>
+                <condition id="3" name="On key released" sid="181451141619710" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="145190845953012" type="Fred">
+                    <param id="0" name="Object">SilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="919099492075002" type="Audio">
+                    <param id="0" name="Audio file">Escudos</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="602614272409388" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">angLeft &lt;= 360 ? 90 : 0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="406507366457478" type="SilverStar">
+                    <param id="0" name="Angle">angLeft</param>
+                </action>
+                <action id="-9" name="Set value" sid="333836563398630" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">angLeft  = 360 ? 0 : angLeft</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="466382830438156">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="858682168568625" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="630744433859260" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="549202469018436" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGoldStar</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="702372179190719" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGreenDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="338780832190854" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angRedDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="540714216713285" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angSilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="535549440568149" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="227670526088100" type="Porta" />
+                <action id="0" name="Play" sid="619550779513540" type="Audio">
+                    <param id="0" name="Audio file">Dumpster-Door-Hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="397761911510077" type="portaAberta">
+                    <param id="0" name="X">160</param>
+                    <param id="1" name="Y">26</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="955460941835013">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="501227716182607" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="755733650206965" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="966902280317384" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGoldStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="638123659742166" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="693276169033104" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="172327214293716" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="273186436624409" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="128445947665166" type="Fred" />
+                <action id="0" name="Spawn another object" sid="800978629189531" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="891599246103946" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="704354686312256" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="644013732645798" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="513214350270158" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="278352011620825" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="654601097404757">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="254421483906645" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="299873250876105" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="649567798327426" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGreenDragon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="420810254422950" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="562984373825248" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="837591829609818" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="554852875814016" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="331347655432231" type="Fred" />
+                <action id="0" name="Spawn another object" sid="143279273377178" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="755280930257425" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="474997058712639" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="888047181743622" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="141470979820891" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="861391793798064" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="962415328484199">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="644493104309954" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="387269883303406" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="245958684110921" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angSilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="373878023339429" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="837770835883008" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="910145957919120" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="866812216847094" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="134527806052076" type="Fred" />
+                <action id="0" name="Spawn another object" sid="860881617774871" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="526337539026873" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="788114651461726" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="242193138394925" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="346184510151475" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="317881616712865" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="122844331750841">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="240687798669174" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="506428122514649" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="875322143201120" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angRedDragon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="169322547950588" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="197684599978029" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="264730727120090" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="634379925932809" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="231589350602052" type="Fred" />
+                <action id="0" name="Spawn another object" sid="253156097216272" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="803064978888268" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="749914678700671" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="524166711828287" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="711112868963187" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="666861341899043" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="215998107092901">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="977158026248699" type="Fred">
+                    <param id="0" name="Object">Pergaminho</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="708152603107134" type="dica">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="917993264109056" type="Sprite">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="449229602104855">
+            <conditions>
+                <condition id="-22" name="Else" sid="709173739267135" type="System" />
+                <condition id="-4" name="Trigger once while true" sid="116226510699161" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="196149059620660" type="dica">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="559026858742166" type="Sprite">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="137079810594432">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="700628032161002" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="765804529019153" type="botaodeacao">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="261773098990301">
+            <conditions>
+                <condition id="-22" name="Else" sid="634515552628884" type="System" />
+                <condition id="-4" name="Trigger once while true" sid="974027842803749" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="920993055469923" type="botaodeacao">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="259845095764333">
+            <conditions>
+                <condition id="2" name="Key is down" sid="710580434501475" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="793209606753564" type="Fred">
+                    <param id="0" name="Animation">&quot;left&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="154882300554382">
+            <conditions>
+                <condition id="2" name="Key is down" sid="511485769879050" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="610947598988384" type="Fred">
+                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="640812936380441">
+            <conditions>
+                <condition id="2" name="Key is down" sid="559070071215094" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="568981983778457" type="Fred">
+                    <param id="0" name="Animation">&quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="275462119893355">
+            <conditions>
+                <condition id="2" name="Key is down" sid="785362539614780" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="659108941945691" type="Fred">
+                    <param id="0" name="Animation">&quot;Down&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="996927870552021">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="497637101566557" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="372056268743991" type="Torch">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="722426414297933">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="896005905565813" type="Fred">
+                    <param id="0" name="Object">portaAberta</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="468488904452022" type="System">
+                    <param id="0" name="Layout">SecondChallenge</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="588506002854662">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="260874292806881" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="941233415980115" type="Fred">
+                    <param id="0" name="Object">Pergaminho</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="147502813482386" type="System">
+                    <param id="0" name="Layout">Pergaminho</param>
+                </action>
+                <action id="-9" name="Set value" sid="372063510653094" type="System">
+                    <param id="0" name="Variable">posicao2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-36" name="Save" sid="716588844304422" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="299047685980028">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="828015756282493" type="System">
+                    <param id="0" name="Variable">posicao2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="822571652029109" type="Fred">
+                    <param id="0" name="X">80.079</param>
+                    <param id="1" name="Y">128.326</param>
+                </action>
+                <action id="-9" name="Set value" sid="969533547626210" type="System">
+                    <param id="0" name="Variable">posicao2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="231368292005747">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="595020033235549" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="242455603987591" type="Audio">
+                    <param id="0" name="Audio file">Alexander-Ehlers-Spacetime</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;First&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="279823031562559" type="GameOver">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="379125195108859" type="Reset">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Stop" sid="316735383471818" type="Queimado" />
+                <action id="25" name="Play at object" sid="951371754368106" type="Audio">
+                    <param id="0" name="Audio file">torchBurning</param>
+                    <param id="1" name="Loop">1</param>
+                    <param id="2" name="Volume">-20</param>
+                    <param id="3" name="Object">Torch</param>
+                    <param id="4" name="Inner angle">360</param>
+                    <param id="5" name="Outer angle">360</param>
+                    <param id="6" name="Outer gain">0</param>
+                    <param id="7" name="Tag (optional)">&quot;tocha&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="647674082407478">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="192346753100417" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Reset</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="749432377479019" type="Audio">
+                    <param id="0" name="Audio file">vgmenuhighlight</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="308663116614085" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="458387260143160">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="763016213034763" type="Mouse">
+                    <param id="0" name="Object">Reset</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="417503039366054" type="Reset">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="313580894461074">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="281600860860235" type="Mouse">
+                    <param id="0" name="Object">Reset</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="171301875872933" type="Reset">
+                    <param id="0" name="Animation">&quot;Off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="104135462416980">
+            <conditions>
+                <condition id="0" name="On function" sid="113559388401499" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="931044964168721" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="223873172575085" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="237848649682756" type="fundogameover">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="701029940900675" type="GameOver">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="203716045085474" type="GameOver">
+                    <param id="0" name="Animation">&quot;Loop&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="668849664887653" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="604718359387483" type="Reset">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="812562133954826" title="logica" />
+        <event-block sid="456281994288919">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="933435432856167" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="962432102633452" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="490240014390415" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGoldStar</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="982701853594644" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGreenDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="567173819264801" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angRedDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="509652067458386" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angSilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="141959249572866" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="508799471026744" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="392813115476862" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="292754020950933" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="141669410733218" type="Fred" />
+                <action id="0" name="Spawn another object" sid="836465232141079" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="522775807275136" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="863531156506536" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="171940871697170" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="819097564669697" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="313014261613688" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="435312777402074">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="281018107835430" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="735780116352063" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="193844984624857" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGoldStar</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="770717017710572" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGreenDragon</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="965038149686767" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angRedDragon</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="888905157248572" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angSilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="181387505336815" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="398773247261672" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="545540254981200" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="659676942238852" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="855367497416310" type="Fred" />
+                <action id="0" name="Spawn another object" sid="310745442816231" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="997265581768628" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="372046240409831" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="195882278233609" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="691817816460438" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="300834372923606" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="462006355153687">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="416579426354842" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="478084588617707" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="240979153598812" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGoldStar</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="405419667154900" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGreenDragon</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="917187849444135" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angRedDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="487065872677680" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angSilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="959238469589148" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="690417732927388" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="974569111133913" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="641754434929636" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="861769106563228" type="Fred" />
+                <action id="0" name="Spawn another object" sid="441655556098153" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="701595181201845" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="758562391388752" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="344100971760806" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="537889276992780" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="815796973658503" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="783631221898539">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="160394972216921" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="131724227189414" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="626752490433100" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGoldStar</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="186823361809762" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGreenDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="821877688576392" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angRedDragon</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="776526109073378" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angSilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="766825416914770" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="539279648661961" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="341613991614460" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="813527784768823" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="594085654557987" type="Fred" />
+                <action id="0" name="Spawn another object" sid="847592284436806" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="337434675352234" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="567665732272785" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="332239940363683" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="147193915459241" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="504671103396160" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="595454934362042">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="450526956520542" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="554923828782799" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="855199503756453" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGoldStar</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="250635850405320" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGreenDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="650722022863338" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angRedDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="129024198873596" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angSilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="456721246924692" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="950393745456941" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="231392861142539" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="177768953548248" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="872126528628020" type="Fred" />
+                <action id="0" name="Spawn another object" sid="244054388568502" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="861514122815916" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="636480995098987" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="517819867771082" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="425494849653034" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="207278003713811" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="756706698027654">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="444022018295955" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="611750613602632" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="790553821757778" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGoldStar</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="933232278842119" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angGreenDragon</param>
+                </condition>
+                <condition id="-14" inverted="1" name="Compare variable" sid="566950901306635" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angRedDragon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="362062635466011" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">angSilverStar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="447740575454032" type="Lever">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="741200640104648" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-25</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="703757333802884" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="414040979614225" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="403227218759546" type="Fred" />
+                <action id="0" name="Spawn another object" sid="561933970821333" type="Fred">
+                    <param id="0" name="Object">Queimado</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="494855229364581" type="System">
+                    <param id="0" name="Variable">angDown</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="618597619586332" type="System">
+                    <param id="0" name="Variable">angLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="769415578822225" type="System">
+                    <param id="0" name="Variable">angRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="141582000410230" type="System">
+                    <param id="0" name="Variable">angUp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="640366059858521" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="590416063538630">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="431662085670547" type="Fred">
+                    <param id="0" name="Object">RedDragon</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="197753754218656" type="botaodeacao">
+                    <param id="0" name="Instance variable">id</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="351191527423109" type="botaodeacao">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="173574219151582">
+            <conditions>
+                <condition id="-22" name="Else" sid="446145704445969" type="System" />
+                <condition id="-4" name="Trigger once while true" sid="110473866713232" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="861697520518035" type="botaodeacao">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="870487548711019">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="191773158562415" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="781542740821050" type="Audio">
+                    <param id="0" name="Tag">&quot;First&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="114541895194058">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="213307114471411" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="596883065489462" type="Fred">
+                    <param id="0" name="Object">Lever</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="332257413029204" type="Audio">
+                    <param id="0" name="Audio file">Alavanca-2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="422919950402780">
+            <conditions>
+                <condition id="2" name="Is playing" sid="374309135589568" type="Fire_Trap">
+                    <param id="0" name="Animation">&quot;fogo&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="335580259763846" type="Audio">
+                    <param id="0" name="Audio file">flame</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;fire&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="192625397206059">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="171968700090271" type="GameOver" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="750550268423076" type="Audio">
+                    <param id="0" name="Tag">&quot;fire&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="676777758035028" type="Audio">
+                    <param id="0" name="Tag">&quot;tocha&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>HallSheet</name>
+    <events>
+        <variable constant="0" name="posicao" sid="327983850906759" static="0" type="number">0</variable>
+        <event-block sid="489248595988602">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="989941141426719" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="609269017942284" type="Torch">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="697225452972970" type="Tocha2">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="377550174693728">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="654730093828554" type="Fred">
+                    <param id="0" name="Object">paredevisivel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="608979247281253" type="System">
+                    <param id="0" name="Layout">LabyrinthChallenge</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558606254940565">
+            <conditions>
+                <condition id="2" name="Key is down" sid="556413389241551" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="126974985214941" type="Fred">
+                    <param id="0" name="Animation">&quot;left&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="916604973984257">
+            <conditions>
+                <condition id="2" name="Key is down" sid="703197711702639" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="372241201365665" type="Fred">
+                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="344732388930197">
+            <conditions>
+                <condition id="2" name="Key is down" sid="758123325048914" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="263277386934259" type="Fred">
+                    <param id="0" name="Animation">&quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="900525300394008">
+            <conditions>
+                <condition id="2" name="Key is down" sid="641877392036168" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="147705971429239" type="Fred">
+                    <param id="0" name="Animation">&quot;Down&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="267377973718070">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="550046888732331" type="Fred">
+                    <param id="0" name="Object">Pedra</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="883935310132876" type="botaodeacao">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="314619609335708">
+            <conditions>
+                <condition id="-22" name="Else" sid="421418072131917" type="System" />
+                <condition id="-4" name="Trigger once while true" sid="921601476114481" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="102218508965488" type="botaodeacao">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="985851632681070">
+            <conditions>
+                <condition id="3" name="On key released" sid="679979041994676" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="181181442126717" type="Fred">
+                    <param id="0" name="Object">Pedra</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="902872176150613" type="System">
+                    <param id="0" name="Layout">Pedra</param>
+                </action>
+                <action id="-9" name="Set value" sid="451310727634143" type="System">
+                    <param id="0" name="Variable">posicao</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721356327567799">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="508008800786844" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="390753247210700" type="Audio">
+                    <param id="0" name="Audio file">Alexander-Ehlers-Twists</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-35</param>
+                    <param id="1" name="Tag (optional)">&quot;Hall&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="405595942684729" type="Audio">
+                    <param id="0" name="Audio file">torchBurning</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;fogo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="298301100204597">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="251805452177185" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="570785939430457" type="Audio">
+                    <param id="0" name="Tag">&quot;Hall&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="496811252486260" type="Audio">
+                    <param id="0" name="Tag">&quot;fogo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="944040368774556">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="945505381698783" type="System">
+                    <param id="0" name="Variable">posicao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="218723098536056" type="Fred">
+                    <param id="0" name="X">26.52</param>
+                    <param id="1" name="Y">48.235</param>
+                </action>
+                <action id="-9" name="Set value" sid="245802197761449" type="System">
+                    <param id="0" name="Variable">posicao</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

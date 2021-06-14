@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ParedeSheet</name>
+    <events>
+        <event-block sid="463985398082696">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="631719559824744" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="320169734221730" type="Audio">
+                    <param id="0" name="Audio file">vgmenuhighlight</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="648764144091985" type="System">
+                    <param id="0" name="Layout">SecondChallenge</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="241064671166530">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="152250916037564" type="Mouse">
+                    <param id="0" name="Object">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="451060828744156" type="Back">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="469343238246280">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="790134505912140" type="Mouse">
+                    <param id="0" name="Object">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="587584507925949" type="Back">
+                    <param id="0" name="Animation">&quot;Off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

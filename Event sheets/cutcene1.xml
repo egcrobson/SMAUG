@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>cutcene1</name>
+    <events>
+        <event-block sid="100352225396864">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="400879633786592" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="620489792080208" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Call function" sid="674672011767329" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: Acorda Fred&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="685723358596732" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="910453602408859" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="505852225249802" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: Acorda Fred&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="512347243129417" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="863809771664235" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="638449698886356" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: ACORDA FRED! &quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="507692034113478" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="412992645107541" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="121928939407059" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Fred: O que, onde eu estou?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="238120955455801" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="154527533967251" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="586913729954385" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: Finalmente você acordou.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="310642610620003" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="734289235132673" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="931576360835474" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Fred: Que voz é essa, quem é você?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="842712191168756" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="867773711405321" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="904213907386896" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: Logo, você vai descobrir quem eu sou.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="903738429769542" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="866183532753715" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="187819965915625" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: Agora você vai descobrir o real motivo de você estar aqui e vai pagar pelos seus pecados.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="770517127803900" type="System">
+                    <param id="0" name="Seconds">10.0</param>
+                </action>
+                <action id="0" name="Set text" sid="924308933892972" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="462787370430749" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Fred: Real motivo? Do que você está falando? &quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="433419566431478" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="354303525956040" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="686058941562642" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: O que você tem que fazer é bem simples&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="574274063705478" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="112194368779590" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="657705167316408" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: você tem que resolver todos os desafios desse lugar, para sair com sua preciosa vida,&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="199091053356363" type="System">
+                    <param id="0" name="Seconds">12.0</param>
+                </action>
+                <action id="0" name="Set text" sid="297984474288103" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="922506720620177" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: se é que isso é possível&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="310285292428682" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="813602311061794" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="486998877640047" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: HaHaHaHaHa!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="903995678808476" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="0" name="Set text" sid="288689868039337" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="820855537291076" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Fred: Resolver desafios?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="889000621262431" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="701399659287836" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="177620295228250" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Fred: Do que você está falando cara?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="381446783942720" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="191762843170966" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="564966951771304" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;?: Espero que você esteja pronto!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="909941890194639" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="458459653798358" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="239305441649724" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Fred: Pronto? Pronto para o que cara?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="646003214197768" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="412391058639686" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="416756566864286" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Cai a venda de Fred&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="573408219867249" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="805481804335022" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="218341161908547" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;Fred: Onde estou? De que pecados ele está falando?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="665892955643044" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="732824213572957" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="725462979227378" type="System">
+                    <param id="0" name="Layout">FirstChallenge</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="436308157147429">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="981572877509353" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="133609915675073">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="999547600026063" type="Dialogo">
+                            <param id="0" name="Instance variable">monstrar</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="793072683885558">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="581284052461755" type="Dialogo">
+                                    <param id="0" name="Text to compare">Dialogo.fala</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="616614319225438" type="Dialogo">
+                                    <param id="0" name="Instance variable">monstrar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="645447410378465">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="135341631681674" type="System">
+                                    <param id="0" name="Interval (seconds)">0.1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="522714480363710" type="Dialogo">
+                                    <param id="0" name="Text">left(Dialogo.fala,len(Dialogo.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="288510036297991">
+            <conditions>
+                <condition id="0" name="On function" sid="474809192116201" type="Function">
+                    <param id="0" name="Name">&quot;dialogos&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="429586661279051" type="Dialogo">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="647799425209250" type="Dialogo">
+                    <param id="0" name="Instance variable">fala</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="883818532306304" type="Dialogo">
+                    <param id="0" name="Instance variable">monstrar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

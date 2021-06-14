@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LabyrinthSheet</name>
+    <events>
+        <variable constant="0" name="timelab" sid="608320848432059" static="0" type="number">15</variable>
+        <event-block sid="188482116992040">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="361621887542299" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="204387644162011" type="System">
+                    <param id="0" name="Variable">timelab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="957435507978913">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="814028839641943" type="System">
+                    <param id="0" name="Variable">timelab</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="900095811827651" type="Text" />
+                <action id="0" name="Set text" sid="933230376989964" type="Text2">
+                    <param id="0" name="Text">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="670753332992350" type="Text2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="696052671690813" type="Spike">
+                    <param id="0" name="Animation">&quot;Espinhos&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="302467023160645" type="Spike2">
+                    <param id="0" name="Animation">&quot;Espinhos2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="683270276373299" type="Audio">
+                    <param id="0" name="Audio file">Espinhos-1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="293927335554485" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="6" name="Stop" sid="109746159352245" type="Audio">
+                    <param id="0" name="Tag">&quot;Spacetime&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="524922314804097" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="400116824238099">
+            <conditions />
+            <actions>
+                <action id="0" name="Set text" sid="391258906926503" type="Text">
+                    <param id="0" name="Text">timelab</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="593161421806871">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="100714203739732" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="962603843617849" type="Audio">
+                    <param id="0" name="Audio file">Alexander-Ehlers-Spacetime</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;Spacetime&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="962863320133026" type="Audio">
+                    <param id="0" name="Audio file">Cronometro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;tempo&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="410332435986060" type="GameOver">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="564142600301600" type="Reset">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Stop" sid="823757418297443" type="MorteEspinhos" />
+            </actions>
+        </event-block>
+        <event-block sid="904600753280590">
+            <conditions>
+                <condition id="2" name="Key is down" sid="382903081368825" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="497660121709618" type="Fred">
+                    <param id="0" name="Animation">&quot;left&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="942532736532781">
+            <conditions>
+                <condition id="2" name="Key is down" sid="838839769194168" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="646363578039131" type="Fred">
+                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="682490831334683">
+            <conditions>
+                <condition id="2" name="Key is down" sid="938316661723466" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="974426205151263" type="Fred">
+                    <param id="0" name="Animation">&quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="705969631598507">
+            <conditions>
+                <condition id="2" name="Key is down" sid="712805699876247" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="223334328778148" type="Fred">
+                    <param id="0" name="Animation">&quot;Down&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="980366138091035">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="611661921264559" type="System">
+                    <param id="0" name="Variable">timelab</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="744091206140317" type="Audio">
+                    <param id="0" name="Audio file">Espinhos-1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="800704804753577" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="476751832545952" type="Fred" />
+                <action id="0" name="Spawn another object" sid="115427828582302" type="Fred">
+                    <param id="0" name="Object">MorteEspinhos</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="842778260982338">
+            <conditions>
+                <condition id="0" name="On function" sid="464062448951968" type="Function">
+                    <param id="0" name="Name">&quot;perdeu&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="510794608538060" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="158304270336253" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="673484170839459" type="fundogameover">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="811999199824283" type="GameOver">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="594393189050312" type="GameOver">
+                    <param id="0" name="Animation">&quot;Loop&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="473223741969939" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="137143590194748" type="Reset">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="517417927088222">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="209476662985003" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Reset</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="521003016212439" type="System" />
+                <action id="-9" name="Set value" sid="727223706707352" type="System">
+                    <param id="0" name="Variable">timelab</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="281902836764107">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="743401823184184" type="Mouse">
+                    <param id="0" name="Object">Reset</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="420399696146975" type="Reset">
+                    <param id="0" name="Animation">&quot;on&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="268447408612995">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="608722602604009" type="Mouse">
+                    <param id="0" name="Object">Reset</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="756224781924087" type="Reset">
+                    <param id="0" name="Animation">&quot;off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="713691502545779">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="767375791619778" type="Fred">
+                    <param id="0" name="Object">L30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="953363246398166" type="System">
+                    <param id="0" name="Layout">cutcenefinal</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="311903850321952">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="518360148563134" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="207093773493099" type="Audio">
+                    <param id="0" name="Tag">&quot;Spacetime&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="672199670321660" type="Audio">
+                    <param id="0" name="Tag">&quot;tempo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

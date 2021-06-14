@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>NotaSheet</name>
+    <events>
+        <event-block sid="975365036060473">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="441723618538212" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Voltar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="851835902692323" type="Audio">
+                    <param id="0" name="Audio file">vgmenuhighlight</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="665999563567916" type="System">
+                    <param id="0" name="Layout">SecondChallenge</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="303892061184622">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="681665148016851" type="Mouse">
+                    <param id="0" name="Object">Voltar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="830329690730574" type="Voltar">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="583785017853926">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="783663136044916" type="Mouse">
+                    <param id="0" name="Object">Voltar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="158329040545045" type="Voltar">
+                    <param id="0" name="Animation">&quot;Off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

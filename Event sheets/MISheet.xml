@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MISheet</name>
+    <events>
+        <event-block sid="419648764203820">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="989045006057531" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="257453219225013" type="Audio">
+                    <param id="0" name="Audio file">vgmenuhighlight</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="275598086694101" type="System">
+                    <param id="0" name="Layout">cutcene1</param>
+                </action>
+                <action id="6" name="Stop" sid="699564261714891" type="Audio">
+                    <param id="0" name="Tag">&quot;menu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="425525083666304">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="549409991353770" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Options</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="174845367941409" type="Audio">
+                    <param id="0" name="Audio file">vgmenuhighlight</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="431188559413856" type="System">
+                    <param id="0" name="Layout">Opcões</param>
+                </action>
+                <action id="6" name="Stop" sid="315248752954217" type="Audio">
+                    <param id="0" name="Tag">&quot;menu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="877687524792112">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="959241655930091" type="Mouse">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="784433599716460" type="Start">
+                    <param id="0" name="Animation">&quot;on&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="889623621067702">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="202490601969753" type="Mouse">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="925229009853550" type="Start">
+                    <param id="0" name="Animation">&quot;off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="424587782900715">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="792919384727766" type="Mouse">
+                    <param id="0" name="Object">Options</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="532359087849568" type="Options">
+                    <param id="0" name="Animation">&quot;on&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="228472071771941">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="958466321439746" type="Mouse">
+                    <param id="0" name="Object">Options</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="608875020483147" type="Options">
+                    <param id="0" name="Animation">&quot;off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="904149299901938">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="732462408707683" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="749424707762088" type="Audio">
+                    <param id="0" name="Audio file">Flags</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;menu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="981215530349118">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="650058612509514" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Tutorial</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="650080713428216" type="Audio">
+                    <param id="0" name="Audio file">vgmenuhighlight</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="525936792566511" type="System">
+                    <param id="0" name="Layout">Instruções</param>
+                </action>
+                <action id="6" name="Stop" sid="499173899971158" type="Audio">
+                    <param id="0" name="Tag">&quot;menu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="469971782794238">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="476551418066121" type="Mouse">
+                    <param id="0" name="Object">Tutorial</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="219987518326421" type="Tutorial">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="495928432433573">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="896230776970245" type="Mouse">
+                    <param id="0" name="Object">Tutorial</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="478213582462987" type="Tutorial">
+                    <param id="0" name="Animation">&quot;Off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

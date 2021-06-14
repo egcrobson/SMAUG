@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>StudioSheet</name>
+    <events>
+        <event-block sid="631291221568126">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="575057071963223" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="644167527042042" type="System">
+                    <param id="0" name="Width">256</param>
+                    <param id="1" name="Height">256</param>
+                </action>
+                <action id="4" name="Set animation" sid="319578262787202" type="LogoStudio">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="917954591743419" type="Audio">
+                    <param id="0" name="Audio file">owl</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="986418895360700">
+            <conditions>
+                <condition id="4" name="On finished" sid="450323675398953" type="LogoStudio">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="150758175974526" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914555618558129">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="662887622370264" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="896048194384875" type="System">
+                    <param id="0" name="Width">150</param>
+                    <param id="1" name="Height">130</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

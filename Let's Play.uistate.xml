@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">SecondChallenge</layout>
+        <layout order="1">FirstChallenge</layout>
+        <layout order="4">LabyrinthChallenge</layout>
+        <layout order="7">Opcões</layout>
+        <layout order="8">Pergaminho</layout>
+        <layout order="9">Instruções</layout>
+        <layout order="11">Parede</layout>
+        <layout order="12">Nota</layout>
+        <layout order="13">Pedra</layout>
+        <layout order="14">MenuInicial</layout>
+        <layout order="19">cutcenefinal</layout>
+        <layout order="21">Hall</layout>
+        <layout order="23">StudioApresentação</layout>
+        <layout order="25">cutcene1</layout>
+        <event-sheet order="2">FirstChallengeSheet </event-sheet>
+        <event-sheet order="3">SecondChallengeSheet</event-sheet>
+        <event-sheet order="5">LabyrinthSheet</event-sheet>
+        <event-sheet order="6">MISheet</event-sheet>
+        <event-sheet order="10">InstruçõesSheet</event-sheet>
+        <event-sheet order="15">ParedeSheet</event-sheet>
+        <event-sheet order="16">NotaSheet</event-sheet>
+        <event-sheet order="17">PedraSheet</event-sheet>
+        <event-sheet order="18">cutcene1</event-sheet>
+        <event-sheet active="1" order="20">cutcenefinal</event-sheet>
+        <event-sheet order="22">HallSheet</event-sheet>
+        <event-sheet order="24">StudioSheet</event-sheet>
+        <event-sheet order="26">OpcõesSheet</event-sheet>
+        <event-sheet order="27">PergaminhoSheet</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Quina/" />
+        <folder expanded="1" path="animation-folder/Quina2/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral04/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral02/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral2/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral5/" />
+        <folder expanded="1" path="animation-folder/ParedeEsquerda3/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral05/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral03/" />
+        <folder expanded="1" path="animation-folder/ParedeDireita3/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral6/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral06/" />
+        <folder expanded="1" path="animation-folder/ParedeEsquerda1/" />
+        <folder expanded="1" path="animation-folder/ParedePorta/" />
+        <folder expanded="1" path="animation-folder/Porta/" />
+        <folder expanded="1" path="animation-folder/BackGround/" />
+        <folder expanded="1" path="animation-folder/GoldStar/" />
+        <folder expanded="1" path="animation-folder/RedDragon/" />
+        <folder expanded="1" path="animation-folder/ParedeDireita1/" />
+        <folder expanded="1" path="animation-folder/SilverStar/" />
+        <folder expanded="1" path="animation-folder/GreenDragon/" />
+        <folder expanded="1" path="animation-folder/Fire_Trap/" />
+        <folder expanded="1" path="animation-folder/Lever/" />
+        <folder expanded="1" path="animation-folder/ParedeEsquerda2/" />
+        <folder expanded="1" path="animation-folder/Torch/" />
+        <folder expanded="1" path="animation-folder/Pergaminho/" />
+        <folder expanded="1" path="animation-folder/ParedeCentral/" />
+        <folder expanded="1" path="animation-folder/Fred/" />
+        <folder expanded="1" path="animation-folder/portaAberta/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/botaodeacao/" />
+        <folder expanded="1" path="animation-folder/Buraco1/" />
+        <folder expanded="1" path="animation-folder/Buraco2/" />
+        <folder expanded="1" path="animation-folder/Buraco3/" />
+        <folder expanded="1" path="animation-folder/Parte1/" />
+        <folder expanded="1" path="animation-folder/Parte2/" />
+        <folder expanded="1" path="animation-folder/Parte3/" />
+        <folder expanded="1" path="animation-folder/Parte4/" />
+        <folder expanded="1" path="animation-folder/Parte5/" />
+        <folder expanded="1" path="animation-folder/Parte6/" />
+        <folder expanded="1" path="animation-folder/Parte7/" />
+        <folder expanded="1" path="animation-folder/Parte8/" />
+        <folder expanded="1" path="animation-folder/Parte9/" />
+        <folder expanded="1" path="animation-folder/Parte10/" />
+        <folder expanded="1" path="animation-folder/Parte11/" />
+        <folder expanded="1" path="animation-folder/Parte13/" />
+        <folder expanded="1" path="animation-folder/Parte14/" />
+        <folder expanded="1" path="animation-folder/Parte15/" />
+        <folder expanded="1" path="animation-folder/Parte16/" />
+        <folder expanded="1" path="animation-folder/Parte17/" />
+        <folder expanded="1" path="animation-folder/Parte26/" />
+        <folder expanded="1" path="animation-folder/Parte27/" />
+        <folder expanded="1" path="animation-folder/Parte28/" />
+        <folder expanded="1" path="animation-folder/Parte29/" />
+        <folder expanded="1" path="animation-folder/Parte30/" />
+        <folder expanded="1" path="animation-folder/Parte31/" />
+        <folder expanded="1" path="animation-folder/Parte32/" />
+        <folder expanded="1" path="animation-folder/Parte33/" />
+        <folder expanded="1" path="animation-folder/Parte34/" />
+        <folder expanded="1" path="animation-folder/ParedeLateral3/" />
+        <folder expanded="1" path="animation-folder/ParedeDireita2/" />
+        <folder expanded="1" path="animation-folder/Queimado/" />
+        <folder expanded="1" path="animation-folder/Blood/" />
+        <folder expanded="1" path="animation-folder/EstatuaDesativda/" />
+        <folder expanded="1" path="animation-folder/PushTrap/" />
+        <folder expanded="1" path="animation-folder/Chão/" />
+        <folder expanded="1" path="animation-folder/Botão/" />
+        <folder expanded="1" path="animation-folder/Nota/" />
+        <folder expanded="1" path="animation-folder/Blood3/" />
+        <folder expanded="1" path="animation-folder/Blood4/" />
+        <folder expanded="1" path="animation-folder/Blood5/" />
+        <folder expanded="1" path="animation-folder/Blood2/" />
+        <folder expanded="1" path="animation-folder/Blood7/" />
+        <folder expanded="1" path="animation-folder/Ossos/" />
+        <folder expanded="1" path="animation-folder/Ossos2/" />
+        <folder expanded="1" path="animation-folder/Ossos3/" />
+        <folder expanded="1" path="animation-folder/Pedras/" />
+        <folder expanded="1" path="animation-folder/Pedras2/" />
+        <folder expanded="1" path="animation-folder/Pedras3/" />
+        <folder expanded="1" path="animation-folder/Pedras4/" />
+        <folder expanded="1" path="animation-folder/Pedras5/" />
+        <folder expanded="1" path="animation-folder/Fundo/" />
+        <folder expanded="1" path="animation-folder/P2/" />
+        <folder expanded="1" path="animation-folder/P3/" />
+        <folder expanded="1" path="animation-folder/P4/" />
+        <folder expanded="1" path="animation-folder/P5/" />
+        <folder expanded="1" path="animation-folder/P6/" />
+        <folder expanded="1" path="animation-folder/P7/" />
+        <folder expanded="1" path="animation-folder/P8/" />
+        <folder expanded="1" path="animation-folder/P9/" />
+        <folder expanded="1" path="animation-folder/Pilar/" />
+        <folder expanded="1" path="animation-folder/PiilarQuebrado/" />
+        <folder expanded="1" path="animation-folder/Pedra/" />
+        <folder expanded="1" path="animation-folder/Tocha2/" />
+        <folder expanded="1" path="animation-folder/Piso/" />
+        <folder expanded="1" path="animation-folder/L2/" />
+        <folder expanded="1" path="animation-folder/L3/" />
+        <folder expanded="1" path="animation-folder/L4/" />
+        <folder expanded="1" path="animation-folder/L5/" />
+        <folder expanded="1" path="animation-folder/L6/" />
+        <folder expanded="1" path="animation-folder/L7/" />
+        <folder expanded="1" path="animation-folder/L8/" />
+        <folder expanded="1" path="animation-folder/L9/" />
+        <folder expanded="1" path="animation-folder/L10/" />
+        <folder expanded="1" path="animation-folder/L11/" />
+        <folder expanded="1" path="animation-folder/L12/" />
+        <folder expanded="1" path="animation-folder/L13/" />
+        <folder expanded="1" path="animation-folder/L14/" />
+        <folder expanded="1" path="animation-folder/L15/" />
+        <folder expanded="1" path="animation-folder/L16/" />
+        <folder expanded="1" path="animation-folder/L17/" />
+        <folder expanded="1" path="animation-folder/L18/" />
+        <folder expanded="1" path="animation-folder/L19/" />
+        <folder expanded="1" path="animation-folder/L20/" />
+        <folder expanded="1" path="animation-folder/L21/" />
+        <folder expanded="1" path="animation-folder/L22/" />
+        <folder expanded="1" path="animation-folder/L23/" />
+        <folder expanded="1" path="animation-folder/L24/" />
+        <folder expanded="1" path="animation-folder/L25/" />
+        <folder expanded="1" path="animation-folder/L26/" />
+        <folder expanded="1" path="animation-folder/L27/" />
+        <folder expanded="1" path="animation-folder/L28/" />
+        <folder expanded="1" path="animation-folder/L29/" />
+        <folder expanded="1" path="animation-folder/L30/" />
+        <folder expanded="1" path="animation-folder/L31/" />
+        <folder expanded="1" path="animation-folder/Spike/" />
+        <folder expanded="1" path="animation-folder/Spike2/" />
+        <folder expanded="1" path="animation-folder/L1/" />
+        <folder expanded="1" path="animation-folder/L32/" />
+        <folder expanded="1" path="animation-folder/L33/" />
+        <folder expanded="1" path="animation-folder/P1/" />
+        <folder expanded="1" path="animation-folder/P10/" />
+        <folder expanded="1" path="animation-folder/P11/" />
+        <folder expanded="1" path="animation-folder/P12/" />
+        <folder expanded="1" path="animation-folder/MenuInicialFundo/" />
+        <folder expanded="1" path="animation-folder/Start/" />
+        <folder expanded="1" path="animation-folder/Options/" />
+        <folder expanded="1" path="animation-folder/MenuOpçõesFundo/" />
+        <folder expanded="1" path="animation-folder/On/" />
+        <folder expanded="1" path="animation-folder/Back/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/paredevisivel/" />
+        <folder expanded="1" path="animation-folder/paredein2/" />
+        <folder expanded="1" path="animation-folder/teste2/" />
+        <folder expanded="1" path="animation-folder/Off/" />
+        <folder expanded="1" path="animation-folder/GameOver/" />
+        <folder expanded="1" path="animation-folder/Reset/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/FundoPergaminho/" />
+        <folder expanded="1" path="animation-folder/Parte36/" />
+        <folder expanded="1" path="animation-folder/Parte37/" />
+        <folder expanded="1" path="animation-folder/Parte38/" />
+        <folder expanded="1" path="animation-folder/Parte39/" />
+        <folder expanded="1" path="animation-folder/Parte40/" />
+        <folder expanded="1" path="animation-folder/Parte12/" />
+        <folder expanded="1" path="animation-folder/Parte35/" />
+        <folder expanded="1" path="animation-folder/MorteEspinhos/" />
+        <folder expanded="1" path="animation-folder/FundoMenuInstruções/" />
+        <folder expanded="1" path="animation-folder/ExplicaçãoLets/" />
+        <folder expanded="1" path="animation-folder/SetaCima/" />
+        <folder expanded="1" path="animation-folder/SetaBaixo/" />
+        <folder expanded="1" path="animation-folder/SetaEsquerda/" />
+        <folder expanded="1" path="animation-folder/SetaDireita/" />
+        <folder expanded="1" path="animation-folder/Space/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Tutorial/" />
+        <folder expanded="1" path="animation-folder/BackgroundParede/" />
+        <folder expanded="1" path="animation-folder/BackgroundNota/" />
+        <folder expanded="1" path="animation-folder/BackgroundPedra/" />
+        <folder expanded="1" path="animation-folder/Voltar/" />
+        <folder expanded="1" path="animation-folder/fundogameover/" />
+        <folder expanded="1" path="animation-folder/fundopreto/" />
+        <folder expanded="1" path="animation-folder/FredEsmagado/" />
+        <folder expanded="1" path="animation-folder/LogoStudio/" />
+        <folder expanded="1" path="animation-folder/16ANOS/" />
+        <folder expanded="1" path="animation-folder/LogoOwl/" />
+        <folder expanded="1" path="animation-folder/FundoCutFinal/" />
+        <folder expanded="1" path="animation-folder/Cut1/" />
+        <folder expanded="1" path="animation-folder/Cut2/" />
+        <folder expanded="1" path="animation-folder/Cut3/" />
+        <folder expanded="1" path="animation-folder/Cut4/" />
+        <folder expanded="1" path="animation-folder/Cut5/" />
+        <folder expanded="1" path="animation-folder/Cut6/" />
+        <folder expanded="1" path="animation-folder/Cut7/" />
+        <folder expanded="1" path="animation-folder/Cut8/" />
+        <folder expanded="1" path="animation-folder/Cut9/" />
+        <folder expanded="1" path="animation-folder/William/" />
+        <folder expanded="1" path="animation-folder/Cu10/" />
+        <folder expanded="1" path="animation-folder/FreddeCosta/" />
+    </folders-expanded>
+</c2uistate>

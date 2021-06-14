@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>cutcenefinal</name>
+    <events>
+        <variable constant="0" name="William" sid="613364757978263" static="0" type="number">0</variable>
+        <variable constant="0" name="Fred" sid="758039552628202" static="0" type="number">1</variable>
+        <variable constant="0" name="count" sid="604102764080164" static="0" type="number">0</variable>
+        <comment>aqui esta sequencia de dialogo dos dois personagens </comment>
+        <event-block sid="860642774423394">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="504111250743549" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="974293235184813" type="System">
+                    <param id="0" name="Width">160</param>
+                    <param id="1" name="Height">160</param>
+                </action>
+                <action id="0" name="Play" sid="946904745858952" type="Audio">
+                    <param id="0" name="Audio file">Flags</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;final&quot;</param>
+                </action>
+                <action id="5" name="Push" sid="776732518026227" type="listadedialogo">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">&quot;Olá Fred, tudo bem, acho que você não vai lembrar de mim.&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="238023796542494" type="listadedialogo">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">&quot; Quem é você? E que lugar é esse?&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="664247376112542" type="listadedialogo">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">&quot;Eu? Eu sou William, você não se lembra de mim?&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="299766127556889" type="listadedialogo">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">&quot;William?&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="117601220601718" type="listadedialogo">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">&quot;Aquele da época da escola.&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="995641650582523" type="listadedialogo">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">&quot;Não é possível, você é aquele garoto?&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="704341804704489" type="listadedialogo">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">&quot;Agora você lembrou de mim. &quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action disabled="1" id="5" name="Push" sid="293740348210703" type="listadedialogo">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">&quot;Isso é apenas um teste&quot; &amp;Newline&amp; &quot;de Dialogo&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="920480685017709" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="484680813940885">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="447884908013523" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="405438482709539">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="934524169053492" type="CaixaDialogoFred">
+                            <param id="0" name="Instance variable">monstrar</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="275594622816022">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="901401319196540" type="System">
+                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="148102899455814" type="CaixaDialogoFred">
+                                    <param id="0" name="Text">left(CaixaDialogoFred.fala,len(CaixaDialogoFred.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="848852073180278">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="189086704538193" type="CaixaDialogoFred">
+                                    <param id="0" name="Text to compare">CaixaDialogoFred.fala</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="360492901602597" type="CaixaDialogoFred">
+                                    <param id="0" name="Instance variable">monstrar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="423196765223526">
+            <conditions>
+                <condition id="0" name="On function" sid="964771786633990" type="Function">
+                    <param id="0" name="Name">&quot;DiaologoFred&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="716173030923008" type="CaixaDialogoFred">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="521085669017246" type="CaixaDialogoFred">
+                    <param id="0" name="Instance variable">fala</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="557764726391845" type="CaixaDialogoFred">
+                    <param id="0" name="Instance variable">monstrar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="631592438441374">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="232460486086934" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="663850987665323">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="770880164147954" type="CaixaDialogoWilliam">
+                            <param id="0" name="Instance variable">monstrar</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="798653924854739">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="569647576266047" type="System">
+                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="721492223796169" type="CaixaDialogoWilliam">
+                                    <param id="0" name="Text">left(CaixaDialogoWilliam.fala,len(CaixaDialogoWilliam.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="875185015933519">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="908748052426340" type="CaixaDialogoWilliam">
+                                    <param id="0" name="Text to compare">CaixaDialogoWilliam.fala</param>
+                                    <param id="1" name="Case sensitivity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="368703500214101" type="CaixaDialogoWilliam">
+                                    <param id="0" name="Instance variable">monstrar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="452661928411118">
+            <conditions>
+                <condition id="0" name="On function" sid="270875553709770" type="Function">
+                    <param id="0" name="Name">&quot;DialogoWilliam&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="271673426407474" type="CaixaDialogoWilliam">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="654538061598089" type="CaixaDialogoWilliam">
+                    <param id="0" name="Instance variable">fala</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="545797484641792" type="CaixaDialogoWilliam">
+                    <param id="0" name="Instance variable">monstrar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="467573759009829">
+            <conditions>
+                <condition id="3" name="On key released" sid="190255649667549" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="224867593717880">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="488075017710249" type="System">
+                            <param id="0" name="Variable">Fred</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">count%2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="664772075238240" type="Function">
+                            <param id="0" name="Name">&quot;DiaologoFred&quot;</param>
+                            <param id="1" name="Parameter {n}">listadedialogo.At(count)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="829484340600530" type="System">
+                            <param id="0" name="Seconds">4.0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="605958133205772" type="CaixaDialogoFred">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="218756926126844" type="System">
+                            <param id="0" name="Variable">count</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="803659468308360">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="806508714955727" type="System">
+                            <param id="0" name="Variable">William</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">count%2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="398677919568911" type="Function">
+                            <param id="0" name="Name">&quot;DialogoWilliam&quot;</param>
+                            <param id="1" name="Parameter {n}">listadedialogo.At(count)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="398367709464650" type="System">
+                            <param id="0" name="Seconds">4.0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="235768234041332" type="CaixaDialogoWilliam">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="787170165588749" type="System">
+                            <param id="0" name="Variable">count</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119056489999142">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="316841545939162" type="System">
+                            <param id="0" name="Variable">count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="160512791874830" type="Audio">
+                            <param id="0" name="Tag">&quot;final&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="747599691145434" type="System">
+                            <param id="0" name="Layout">StudioApresentação</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="719063730056936">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="806329760377085" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="549430302899432" type="Torch">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="172619343077946" type="botaodeacao">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="700822097614434" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="759247828269482" type="botaodeacao">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

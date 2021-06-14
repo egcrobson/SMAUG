@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>OpcõesSheet</name>
+    <events>
+        <variable constant="0" name="mute" sid="849332721290681" static="0" type="number">0</variable>
+        <event-block sid="888644552582310">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="656935783235060" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="476471782219232" type="Audio">
+                    <param id="0" name="Audio file">vgmenuhighlight</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="159942610338990" type="System">
+                    <param id="0" name="Layout">MenuInicial</param>
+                </action>
+                <action id="6" name="Stop" sid="597294340993253" type="Audio">
+                    <param id="0" name="Tag">&quot;opcao&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="386514723080704">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="470179695920909" type="Mouse">
+                    <param id="0" name="Object">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="786416902110147" type="Back">
+                    <param id="0" name="Animation">&quot;on&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="926510874031326">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="216420999464862" type="Mouse">
+                    <param id="0" name="Object">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="593807705895830" type="Back">
+                    <param id="0" name="Animation">&quot;off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="760306768584046">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="231936842168514" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">On</param>
+                </condition>
+                <condition id="4" inverted="1" name="Is any playing" sid="806886127004453" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="8" name="Set silent" sid="762797895443083" type="Audio">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="0" name="Play" sid="823370834742334" type="Audio">
+                    <param id="0" name="Audio file">Alexander-Ehlers-Great-mission</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;opcao&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="872288409476984" type="On">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="642707250558788" type="Off">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="314492773087892">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="473653860738577" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Off</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="456277828469285" type="Audio">
+                    <param id="0" name="Tag">&quot;opcao&quot;</param>
+                </action>
+                <action id="8" name="Set silent" sid="982136276293941" type="Audio">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="251306716153916" type="Off">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="685721781038475" type="On">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="512705902488126">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="414309649493003" type="Mouse">
+                    <param id="0" name="Object">On</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="355001251091265" type="On">
+                    <param id="0" name="Animation">&quot;off&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="529905601961726">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="694213658940696" type="Mouse">
+                    <param id="0" name="Object">On</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="418699191261980" type="On">
+                    <param id="0" name="Animation">&quot;on&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="934833065122200">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="467033988016069" type="Mouse">
+                    <param id="0" name="Object">Off</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="483768388850604" type="Off">
+                    <param id="0" name="Animation">&quot;On&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="309480595070618">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="678140569132238" type="Mouse">
+                    <param id="0" name="Object">Off</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="348557507547324" type="Off">
+                    <param id="0" name="Animation">&quot;Off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="824051483057779">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="474464192705824" type="System" />
+                <condition id="-10" name="Compare opacity" sid="959172816744436" type="On">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="111329841547620" type="Audio">
+                    <param id="0" name="Audio file">Alexander-Ehlers-Great-mission</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;opcao&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="180920943565484">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="180251531494134" type="System" />
+                <condition id="-10" name="Compare opacity" sid="911334983078991" type="Off">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="801396414740151" type="Audio">
+                    <param id="0" name="Tag">&quot;opcao&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="953756361777299">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="907358310997837" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="170395831005036" type="Audio">
+                    <param id="0" name="Audio file">Alexander-Ehlers-Great-mission</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;opcao&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="578320458123166" type="On">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="942520683513612">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="664980306102380" type="System" />
+                <condition id="5" inverted="1" name="Is tag playing" sid="380780700140648" type="Audio">
+                    <param id="0" name="Tag">&quot;opcao&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="516916638184848" type="Off">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="566952537098678" type="On">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="723359683512852">
+            <conditions>
+                <condition id="5" name="Is tag playing" sid="960985723960017" type="Audio">
+                    <param id="0" name="Tag">&quot;opcao&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set looping" sid="695202333263420" type="Audio">
+                    <param id="0" name="Tag">&quot;opcao&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
